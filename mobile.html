@@ -510,68 +510,21 @@ footer .fc{font-size:9.5px;color:rgba(60,50,40,.26)}
   <h2 class="c" style="margin-bottom:5px">Start the<br>Conversation</h2>
   <p class="b c" style="margin-bottom:18px">Tell us about your boutique.</p>
 
-  <div class="form-card" id="fc">
-
-    <!-- Step 1 -->
-    <div id="s1" class="fstep">
-      <div class="sind"><div class="sa">1</div><div class="sl"></div><div class="si">2</div><div class="sl"></div><div class="si">3</div></div>
-      <div class="ffs">
-        <p class="flbl">About You</p>
-        <div class="fr">
-          <div class="fg"><label class="fl2">First Name</label><input class="fi2" id="f1" type="text" placeholder="Jane"></div>
-          <div class="fg"><label class="fl2">Last Name</label><input class="fi2" id="f2" type="text" placeholder="Smith"></div>
-        </div>
-        <div class="fgf"><label class="fl2">Your Role</label>
-          <select class="fsel" id="f3"><option value="" disabled selected>Select role</option><option>Owner</option><option>Co-Owner</option><option>Manager</option><option>Other</option></select></div>
-        <div class="fgf"><label class="fl2">Boutique Name</label><input class="fi2" id="f4" type="text" placeholder="Your Boutique Name"></div>
-        <div class="fgf"><label class="fl2">Website</label><input class="fi2" id="f5" type="url" placeholder="yourboutique.com"></div>
-        <div class="fgf"><label class="fl2">Instagram</label><input class="fi2" id="f6" type="text" placeholder="@yourboutique"></div>
-        <button class="bc off" id="b1" type="button" onclick="nxt(2)">Continue</button>
-      </div>
-    </div>
-
-    <!-- Step 2 -->
-    <div id="s2" class="fstep" style="display:none">
-      <div class="sind"><div class="sd">✓</div><div class="sld"></div><div class="sa">2</div><div class="sl"></div><div class="si">3</div></div>
-      <div class="ffs">
-        <p class="flbl">Your Boutique</p>
-        <div class="fgf"><label class="fl2">Monthly Appointments</label>
-          <select class="fsel" id="f7"><option value="" disabled selected>Current volume</option><option>0–30</option><option>30–60</option><option>60–100</option><option>100+</option></select></div>
-        <div class="fgf"><label class="fl2">Average Dress Price</label>
-          <select class="fsel" id="f8"><option value="" disabled selected>Price range</option><option>Under $1,000</option><option>$1,000–$2,000</option><option>$2,000–$5,000</option><option>$5,000+</option></select></div>
-        <button class="bb" type="button" onclick="nxt(1)">← Back</button>
-        <button class="bc off" id="b2" type="button" onclick="nxt(3)">Continue</button>
-      </div>
-    </div>
-
-    <!-- Step 3 -->
-    <div id="s3" class="fstep" style="display:none">
-      <div class="sind"><div class="sd">✓</div><div class="sld"></div><div class="sd">✓</div><div class="sld"></div><div class="sa">3</div></div>
-      <div class="ffs">
-        <p class="flbl">Your Challenge</p>
-        <div class="fgf"><label class="fl2">Biggest Booking Challenge</label>
-          <select class="fsel" id="f9"><option value="" disabled selected>Select one</option><option>Empty slots</option><option>No-shows</option><option>Unpredictable bookings</option><option>All of the above</option></select></div>
-        <div class="fgf"><label class="fl2">Email</label><input class="fi2" id="f10" type="email" placeholder="you@yourboutique.com"></div>
-        <div class="fgf"><label class="fl2">Phone</label><input class="fi2" id="f11" type="tel" placeholder="+1 (555) 000-0000"></div>
-        <p style="font-size:11px;color:#8C7B6B;line-height:16px;margin-top:4px;margin-bottom:0;">By submitting this form, you agree to receive SMS messages from Booked Bridal. Msg &amp; data rates may apply. Reply STOP to opt out. Reply HELP for help. Message frequency varies.</p>
-        <button class="bb" type="button" onclick="nxt(2)">← Back</button>
-        <button class="bc off" id="b3" type="button" onclick="sub()">Submit Application</button>
-      </div>
-    </div>
-
-    <!-- Thank You -->
-    <div id="sty" class="fstep" style="display:none">
-      <div class="ty">
-        <div class="hc"></div>
-        <h2 style="font-size:22px">Thank You</h2>
-        <div class="div"></div>
-        <p class="b">We've received your information.</p>
-        <p class="b">We'll be in touch within 24 hours.</p>
-        <p class="bs">In the meantime — keep doing what you do best.</p>
-        <a href="https://www.instagram.com/bookedbridal/" target="_blank" style="font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:#8C7B6B;text-decoration:none;margin-top:4px">@BOOKEDBRIDAL</a>
-      </div>
-    </div>
-
+  <div style="width:100%;background:#fff;">
+    <iframe
+      src="https://api.leadconnectorhq.com/widget/form/XwolympVff0lIihmieQr"
+      style="width:100%;min-height:742px;border:none;display:block;"
+      id="inline-XwolympVff0lIihmieQr"
+      data-layout="{'id':'INLINE'}"
+      data-trigger-type="alwaysShow"
+      data-activation-type="alwaysActivated"
+      data-deactivation-type="neverDeactivate"
+      data-form-name="Booked Bridal Submission form."
+      data-height="742"
+      data-form-id="XwolympVff0lIihmieQr"
+      title="Booked Bridal Submission form.">
+    </iframe>
+    <script src="https://link.msgsndr.com/js/form_embed.js"></script>
   </div>
 </div>
 
@@ -585,41 +538,6 @@ footer .fc{font-size:9.5px;color:rgba(60,50,40,.26)}
 </div>
 
 <script>
-function g(id){return document.getElementById(id)}
-function c1(){var ok=g('f1').value.trim()&&g('f2').value.trim()&&g('f3').value&&g('f4').value.trim();g('b1').className='bc '+(ok?'on':'off')}
-function c2(){var ok=g('f7').value&&g('f8').value;g('b2').className='bc '+(ok?'on':'off')}
-function c3(){var ok=g('f9').value&&g('f10').value.trim();g('b3').className='bc '+(ok?'on':'off')}
-function nxt(n){
-  if(n==2&&!(g('f1').value.trim()&&g('f2').value.trim()&&g('f3').value&&g('f4').value.trim()))return;
-  if(n==3&&!(g('f7').value&&g('f8').value))return;
-  ['s1','s2','s3','sty'].forEach(function(id){g(id).style.display='none'});
-  g(n=='ty'?'sty':'s'+n).style.display='flex';
-  g('fc').scrollIntoView({behavior:'smooth',block:'start'});
-}
-function sub(){
-  if(!(g('f9').value&&g('f10').value.trim()))return;
-  var data={
-    first_name:g('f1').value.trim(),
-    last_name:g('f2').value.trim(),
-    role:g('f3').value,
-    boutique_name:g('f4').value.trim(),
-    website:g('f5').value.trim(),
-    instagram:g('f6').value.trim(),
-    monthly_appointments:g('f7').value,
-    average_dress_price:g('f8').value,
-    biggest_challenge:g('f9').value,
-    email:g('f10').value.trim(),
-    phone:g('f11').value.trim()
-  };
- fetch('https://services.leadconnectorhq.com/hooks/8Ht7yLJNdru9LeukD9zf/webhook-trigger/864a36ca-12a0-427b-b8d0-88857955e8d4',{
-    method:'POST',
-    headers:{'Content-Type':'application/json'},
-    body:JSON.stringify(data)
-  }).then(function(){
-    nxt('ty');
-  }).catch(function(){
-    nxt('ty');
-  });
 function faq(btn){
   var item=btn.parentElement;
   var open=item.classList.contains('open');
@@ -627,10 +545,6 @@ function faq(btn){
   if(!open)item.classList.add('open');
 }
 document.addEventListener('DOMContentLoaded',function(){
-  ['f1','f2','f4','f5','f6'].forEach(function(id){g(id).addEventListener('input',c1)});
-  g('f3').addEventListener('change',c1);
-  g('f7').addEventListener('change',c2);g('f8').addEventListener('change',c2);
-  g('f9').addEventListener('change',c3);g('f10').addEventListener('input',c3);
   // Fade in
   var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('in')})},{threshold:.07});
   document.querySelectorAll('.fd').forEach(function(el){obs.observe(el)});
