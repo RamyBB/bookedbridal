@@ -611,14 +611,15 @@ function sub(){
     email:g('f10').value.trim(),
     phone:g('f11').value.trim()
   };
-  fetch('https://services.leadconnectorhq.com/hooks/8Ht7yLJNdru9LeukD9zf/webhook-trigger/864a36ca-12a0-427b-b8d0-88857955e8d4',{
+ fetch('https://services.leadconnectorhq.com/hooks/8Ht7yLJNdru9LeukD9zf/webhook-trigger/864a36ca-12a0-427b-b8d0-88857955e8d4',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify(data)
-  }).catch(function(){});
-  // done)})
-  nxt('ty');
-}
+  }).then(function(){
+    nxt('ty');
+  }).catch(function(){
+    nxt('ty');
+  });
 function faq(btn){
   var item=btn.parentElement;
   var open=item.classList.contains('open');
